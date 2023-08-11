@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\BookOperations\CreateBook\" />
+    <Folder Include="Application\BookOperations\DeleteBook\" />
+    <Folder Include="Application\BookOperations\GetBookDetail\" />
+    <Folder Include="Application\BookOperations\GetBooks\" />
+    <Folder Include="Application\BookOperations\UpdateBook\" />
+    <Folder Include="Application\GenreOperations\CreateGenre\" />
+    <Folder Include="Application\GenreOperations\DeleteGenre\" />
+    <Folder Include="Application\GenreOperations\GetGenreDetail\" />
+    <Folder Include="Application\GenreOperations\GetGenres\" />
+    <Folder Include="Application\GenreOperations\UpdateGenre\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="6.11.0" />
+    <PackageReference Include="xunit.extensibility.core" Version="2.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\patika.dev-dotnet-bootcamp-main\WebApi.csproj" />
+  </ItemGroup>
+
+</Project>
